@@ -14,7 +14,7 @@ if(c > 0 && c < 10){
 
 let d = 7;
 let e = 107;
-if(d||e>100){
+if(d>100||e>100){
     console.log('Верно');
 }else{
     console.log('Не верно');
@@ -23,7 +23,6 @@ if(d||e>100){
 let a = '2';
 let b = '3';
 // Код выше изменять менять нельзя. Чтобы решить задачу исправьте код ниже:
-let  = Number("23");
 alert(+a + +b);
 
 let monthNumber = Number (prompt('Введите номер месяца'))
@@ -65,7 +64,40 @@ switch (monthNumber) {
         console.log('Зима');
         break;    
     default:
-        if(monthNumber > 12)
+        if(monthNumber > 12){
        console.log('Некорректное значение');
+     }
  }
+
+//Дополнительные задания
+
+let checkNumber = Number(prompt("Пожалуйста, введите любое число"));
+if(isNaN(checkNumber)){
+    console.log(NaN);
+}else{
+    console.log(checkNumber);
+}
+if (checkNumber % 2 == 0) {
+    alert("Число чётное");
+  } else {
+    alert("Число нечётное");
+  }
+
+  let clientOS = 0;
+    if (clientOS == 0) {
+        alert ("Установите версию приложения для iOS по ссылке");
+    }else if (clientOS == 0 && clientDeviceYear < 2015){
+        alert ("Установите облегченную версию приложения для iOS по ссылке")
+    }
+    else if (clientOS == 1){
+        alert ("Установите версию приложения для Android по ссылке");
+    }
+    else if (clientOS == 1 && clientDeviceYear < 2015){
+    alert ("Установите облегченную версию приложения для Android по ссылке");
+    }
+
+
+
+  
+   
 
