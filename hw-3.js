@@ -72,16 +72,16 @@ switch (monthNumber) {
 //Дополнительные задания
 
 let checkNumber = Number(prompt("Пожалуйста, введите любое число"));
-if(isNaN(checkNumber)){
-    console.log(NaN);
-}else{
+{
     console.log(checkNumber);
-}
 if (checkNumber % 2 == 0) {
     alert("Число чётное");
-  } else {
+} else if (isNaN (checkNumber)){
+    alert("Это не число. Попробуйте ещё раз")
+} else{
     alert("Число нечётное");
   }
+}
 
   let clientOS = 0;
     if (clientOS == 0) {
