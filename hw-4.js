@@ -47,16 +47,16 @@ console.log(months.length);
 
 //add.task#3
 const book = {
-    Автор: 'Марсель Пруст',
-    Название: '"В поисках утраченного времени"',
-    Жанр: 'Роман',
-    Год_издания: '1913-1927'
- }
- for (let key in book) {
+    Author: 'Марсель Пруст',
+    Title: '"В поисках утраченного времени"',
+    Genre: 'Роман',
+    YearPublication: '1913-1927'
+}
+for (let key in book) {
     console.log(`${key}: ${book[key]}`);
- }
+}
 //add.task#4
 let num = [36, 18, 11, 98, 12, 42];
-let min = Math.min (...num);
+let min = Math.min(...num);
 console.log(min);
 
