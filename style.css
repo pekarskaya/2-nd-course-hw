@@ -92,6 +92,24 @@
     background-color: #FFFFFF;
     background-image: url(img/button-white.svg);
   }
+  .main-content__batton{
+    z-index: 1;
+    background: url(img/button-play-black.svg);
+    display: inline-block;
+    width: 247px;
+    height: 66px;
+    cursor: pointer;
+    transition: 0.2s;
+    color: transparent;
+    margin-top: 48px;
+  } 
+  .main-content__batton:hover{
+    width: 247px;
+    height: 66px;
+    border-radius: 60px;
+    background-color: #FFFFFF;
+    background-image: url(img/button-play-white.svg);
+  }
 
   .top-content__btn {
     position: absolute;
@@ -327,3 +345,4 @@
   }
 
 @import 'style';
+@import 'tablet';
