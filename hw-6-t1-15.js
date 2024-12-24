@@ -40,7 +40,8 @@ console.log(arr111222);
 //Задание 6. Дан массив: [9, 8, 7, 'a', 6, 5].С помощью метода sort отсортируйте массив и удалите букву 'a' из массива. Затем выведите массив.
 //Vers1
 const allElements2 = [9, 8, 7, 'a', 6, 5];
-allElements2.sort() * allElements2.pop();
+allElements2.sort();
+allElements2.pop();
 
 console.log('Версия 1, pop: ', allElements2);
 
@@ -54,15 +55,15 @@ console.log('Версия 2, filter:', onlyNumbers)
 
 //Задание 7.Дан массив: [9, 8, 7, 6, 5].Попросите пользователя угадать число с помощью метода prompt. Если значение, которое ввел пользователь, есть в массиве, выведите в alert «Угадал», в противном случае — «Не угадал».
 
-   const guessNumber = [9, 8, 7, 6, 5];
+const guessNumber = [9, 8, 7, 6, 5];
 
-   let guessNumber2 = prompt('Угадай число от 1 до 10');
-   if (guessNumber.includes(Number(guessNumber2))) {
-      alert("Угадал");
-   }
-   else {
-      alert("Не угадал")
-   }
+let guessNumber2 = prompt('Угадай число от 1 до 10');
+if (guessNumber.includes(Number(guessNumber2))) {
+   alert("Угадал");
+}
+else {
+   alert("Не угадал")
+}
 
 //Задание 8.Дана строка: 'abcdef'. Выведите в консоль 'fedcba'.
 

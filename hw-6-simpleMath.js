@@ -78,7 +78,7 @@ while(confirm('Двигаемся дальше?')){
             }                  
          } 
    
-      gameMath2()
+    
 
             
             
