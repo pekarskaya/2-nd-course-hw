@@ -1,13 +1,203 @@
 * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-family: "Montserrat", sans-serif;
-  }
-  
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+@media(max-width:1024px){
   .center {
-    padding-left: calc(50% - 600px);
-    padding-right: calc(50% - 600px);
+    padding-left: calc(50% - 393px);
+    padding-right: calc(50% - 393px);
   }
+  .main__plays{
+    width: 786px;
+  }
+  .main__plays_item{
+    grid-column: span 6;
+    grid-row: span 4;
+    gap: 32px;
+  }
+  .top-img__StarBiggest, .main-img, .main-img-1 {
+    visibility: hidden;
+    display: none;
+  }
+  .top-img__Star4{
+    visibility: hidden;
+    display: none;
+  }
+    .top-img__star4mobile{
+    position: absolute;
+    top: 620px;
+    left:275px;
+  }
+  .top-img__Star5{
+    visibility: hidden;
+    display: none;
+  }
+  .top-img__star5mobile{
+    position: absolute;
+    top: 580px;
+    left:245px;
+  }
+}
+@media(max-width:833px) {
+    .top-content center{
+       justify-content: center;
+    }
+    .top{
+        height: 700px;
+        background-image: url(img/background-for-mobile.svg);
+      }
+      .title{
+        width: 296px;
+        margin-top: 147px;
+        margin-bottom: 24px;
+        margin-left: 30px;
+      }
+    
+      .top-content__text, .top-content__text1{
+        display: none
+      }
+      .top-content__text2{
+        flex-wrap: wrap;
+        width: 296px;
+        font-family: inherit;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.5px;
+        text-align: center;
+      }
+      .top-content__batton{
+        z-index: 1;
+        background: url(img/batton-go-for-mobile.svg);
+        display: inline-block;
+        width: 285px;
+        height: 55px;
+        cursor: pointer;
+        transition: 0.2s;
+        color: transparent;
+        margin-top: 48px;
+      } 
+     
+      .top-img__StarBiggest, .main-img, .main-img-1{
+        visibility: hidden;
+        display: none;
+      }
+      .top-img__star-for-mobile{
+        position: absolute;
+        top: 69px;
+        left: 187.16px;
+      }
+      .top-img__Star3{
+        position: absolute;
+        top: 69px;
+        left: 42px;
+      }
+      .top-img__Star2{
+        position: absolute;
+        top: 97px;
+        left: -17px;
+      }
+      .top-img__Star4{
+        visibility: hidden;
+        display: none;
+      }
+        .top-img__star4mobile{
+        position: absolute;
+        top: 620px;
+        left:275px;
+      }
+      .top-img__Star5{
+        visibility: hidden;
+        display: none;
+      }
+      .top-img__star5mobile{
+        position: absolute;
+        top: 580px;
+        left:245px;
+    }
+    .main__plays, .main__title, .main__text{
+      visibility: hidden;
+      display: none;
+    }
+    .main{
+      visibility: hidden;
+      display: none;
+    }
+    .mob{
+      box-sizing: border-box;
+      width: 100%;
+      background-color: #202027;   
+      padding-top: 48.88px;
+      padding-bottom: 48.88px;
+      justify-content: left;
+    }
+    .mob-title{
+      display: flex;
+      flex-wrap: wrap;
+      width: 275px;
+      text-align: left;
+      margin-bottom: 48px;
+      margin-top: 48px;
+      color: #FFFFFF;
+    }
+    .mob__mini-plays {
+        display: grid;
+        gap: 24px;
+        grid-template-columns: repeat(12,1fr);
+        width: 343px;
+        margin-top: 48px;
+      }
+      .mob__mini-plays_item{
+        grid-column: span 12;
+      }
+      .mob__mini-plays_item{
+        display: flex;
+        background-color: #FFFFFF;
+        border-radius: 27.22px;
+        height: 243.7px;
+      }
+      .mob__mini-plays_item-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        margin-top: 48px;}
+
+      .mob__mini-plays_item-img{
+        border-radius: 30px;
+        height: 284.93px;  
+      }
+    
+      .mob__mini-plays_item-text{
+        display: flex;
+        flex-wrap: wrap;
+        width: 440px;
+        font-family: inherit;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        text-align: left;
+      }
+      .mob__mini-plays_item-title{
+        font-family: inherit;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 58.51px;
+        text-align: left;
+        margin-bottom: 24px;
+      }
+      .mob-content__batton{
+        z-index: 1;
+        background: url(img/button-play-mobile.svg);
+        display: inline-block;
+        width: 285px;
+        height: 55px;
+        cursor: pointer;
+        transition: 0.2s;
+        color: transparent;
+        margin-top: 48px;
+      } 
+}
